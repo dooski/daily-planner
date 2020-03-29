@@ -7,10 +7,9 @@ function printDate() {
 
 //timeCheck function: hourly check and class coloration
 setTimeout(timeCheck, 1)
-setInterval(timeCheck, 10000)
+setInterval(timeCheck, 1000)
 function timeCheck() {
     var time = moment().format('HHmm');
-    console.log(time)
     //9am
     if (time >= 900 && time <= 959) {
         $("#9am").removeClass("future past");
@@ -129,3 +128,136 @@ function timeCheck() {
         $("5pm").addClass("present")
     }
 }
+
+//task collection
+//printTask function: prints task
+setTimeout(printTask, 1)
+function printTask() {
+    $("#9amText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#10amText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#11amText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#12pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#1pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#2pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#3pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#4pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+    $("#5pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = localStorage.getItem(id);
+        $(this).val(value);
+    })
+}
+
+//save button functions
+//9am button
+$("#9amButton").on('click', function () {
+    $("#9amText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//10 am button
+$("#10amButton").on('click', function () {
+    $("#10amText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//11 am button
+$("#11amButton").on('click', function () {
+    $("#11amText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//12pm button
+$("#12pmButton").on('click', function () {
+    $("#12pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//1pm button
+$("#1pmButton").on('click', function () {
+    $("#1pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//2pm button
+$("#2pmButton").on('click', function () {
+    $("#2pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//3pm button
+$("#3pmButton").on('click', function () {
+    $("#3pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//4pm button
+$("#4pmButton").on('click', function () {
+    $("#4pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})
+
+//5pm button
+$("#5pmButton").on('click', function () {
+    $("#5pmText").each(function () {
+        var id = $(this).attr('id');
+        var value = $(this).val();
+        localStorage.setItem(id, value);
+    });
+})

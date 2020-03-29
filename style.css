@@ -25,6 +25,11 @@ textarea {
   white-space: pre-wrap;
 }
 
+.form-control {
+  background-color:white;
+  color: black;
+}
+
 .time-block{
   text-align: center;
   border-radius: 15px;

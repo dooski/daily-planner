@@ -10,15 +10,19 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <title>Work Day Scheduler</title>
+  <title>Your Schedule for Today</title>
 </head>
 
 <body>
   <header class="jumbotron">
-    <h1 class="display-3">Daily Scheduler</h1>
+    <h1 class="display-3">Today's Schedule</h1>
     <p class="lead">Keep track of your daily tasks and stay focused!</p>
     <p id="currentDay" class="lead"></p>
   </header>
+
+  <!--all time block elements in this container-->
+  <!--column for form has id of "time" (ex: the 9am slot is simply "9am")-->
+  <!--form is classified as "time"Text-->
   <div class="container">
 
     <!--9am timeblock-->
@@ -27,7 +31,7 @@
         <p>9am</p>
       </div>
       <div class="col-md-9 future" id="9am">
-        <input class="form-control" placeholder="Nothing scheduled!" id="9amText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="9amText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="9amButton">Save</button>
@@ -40,7 +44,7 @@
         <p>10am</p>
       </div>
       <div class="col-md-9 future" id="10am">
-        <input class="form-control" placeholder="Nothing scheduled!" id="10amText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="10amText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="10amButton">Save</button>
@@ -53,7 +57,7 @@
         <p>11am</p>
       </div>
       <div class="col-md-9 future" id="11am">
-        <input class="form-control" placeholder="Nothing scheduled!" id="11amText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="11amText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="11amButton">Save</button>
@@ -66,7 +70,7 @@
         <p>12pm</p>
       </div>
       <div class="col-md-9 future" id="12pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="12pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="12pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="12pmButton">Save</button>
@@ -79,7 +83,7 @@
         <p>1pm</p>
       </div>
       <div class="col-md-9 future" id="1pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="1pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="1pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="1pmButton">Save</button>
@@ -92,7 +96,7 @@
         <p>2pm</p>
       </div>
       <div class="col-md-9 future" id="2pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="2pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="2pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="2pmButton">Save</button>
@@ -105,7 +109,7 @@
         <p>3pm</p>
       </div>
       <div class="col-md-9 future" id="3pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="3pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="3pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="3pmButton">Save</button>
@@ -118,7 +122,7 @@
         <p>4pm</p>
       </div>
       <div class="col-md-9 future" id="4pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="4pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="4pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="4pmButton">Save</button>
@@ -131,7 +135,7 @@
         <p>5pm</p>
       </div>
       <div class="col-md-9 future" id="5pm">
-        <input class="form-control" placeholder="Nothing scheduled!" id="5pmText"></p>
+        <input class="form-control" placeholder="Nothing scheduled!" id="5pmText"></input>
       </div>
       <div class="col-md-1">
         <button class="saveBtn" id="5pmButton">Save</button>
@@ -140,6 +144,7 @@
 
   </div>
 
+  <!--scripts for jquery, moment.js and local script-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
