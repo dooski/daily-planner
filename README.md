@@ -11,3 +11,10 @@ Today's Schedule runs using jQuery and moment.js, along with standard JavaScript
 3. Screenshots
 
 ![Screenshot of Today's Schedule](screenshot.png)
+
+4. Credits and Links
+
+Made by Dan McKeon.
+
+Active webpage: https://dooski.github.io/daily-planner/
+GitHub repository: https://github.com/dooski/daily-planner
