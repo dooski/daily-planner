@@ -10,7 +10,7 @@ Today's Schedule runs using jQuery and moment.js, along with standard JavaScript
 
 3. Screenshots
 
-![Screenshot of Today's Schedule](screenshot.png)
+![Screenshot of Today's Schedule](screenshot.PNG)
 
 4. Credits and Links
 
